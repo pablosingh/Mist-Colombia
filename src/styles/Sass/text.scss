@@ -1,0 +1,226 @@
+.day {
+  width: 30%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.002em;
+
+  color: #4f4f4f;
+}
+
+.daySchedule {
+  display: flex;
+  width: 100%;
+}
+
+.assignTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.superTitle {
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid black;
+}
+
+.containerAssign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerSubService {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftSubService {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.nameSubService {
+  margin: 0.1em 0.5em;
+}
+
+.inputNumber {
+  width: 30%;
+  padding: 0.2em;
+}
+
+.subServiceShow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appointmentInfo {
+  width: 236px;
+  height: 78px;
+
+  background: #ffffff;
+  border: 0.1px solid #a3a4b0;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(163, 164, 176, 0.05);
+  border-radius: 8px;
+  margin: 10px 10px 10px 10px;
+}
+
+.appointmentInfoText {
+  padding: 12px 0 0 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 8px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.002em;
+
+  color: #606060;
+}
+
+.appointmentInfoSubtext {
+  padding: 8px 0 0 10px;
+  height: 8px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.002em;
+  text-align: left;
+  color: #606060;
+}
+
+.appointmentWeekInfoText {
+  padding: 8px 0 0 10px;
+  height: 8px;
+  width: 69px;
+  height: 10px;
+  left: 255px;
+  top: 218px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  letter-spacing: 0.03em;
+
+  /* Gris */
+  color: #606060;
+}
+
+// =============================================
+.containerNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffa41d;
+  max-width: 100vw;
+  height: 20vh;
+  border-bottom-left-radius: 1.3em;
+}
+
+.leftNavBar{
+  // background-color: aqua;
+  padding-left: 1em;
+}
+.rightNavBar{
+  // background-color: burlywood;
+  padding-right: 1em;
+}
+
+.homePosterior{
+  background-color: #ffa41d;
+  // height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  // height: 80vh;
+  border-top-right-radius: 1.3em;
+}
+
+.nextAppointment{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: white;
+  margin: 0;
+  padding: 1em 0 0 0;
+  *{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+//=================================
+.appointment{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: white;
+  border-bottom: 1px solid #A3A4B0;
+  // padding-bottom: 0.8em;
+  padding: 15px 25px 22px 15px;
+}
+
+.appointmentDate{
+  display: flex;
+  justify-content: center;
+  // border: 1px solid black;
+  flex-grow: 2;
+}
+.cardAppointment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #A3A4B0;
+  box-shadow: 0px 4px 4px rgba(163, 164, 176, 0.05);
+  flex-grow: 4;
+  border-radius: 1em;
+}
+//  ================================================================
+
+.containerStatics{
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5em 0;
+}
+
+.staticsCards{
+  // width: 30vh;
+  background-color: #0D919D;
+  color: #FFFFFF;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  .hacheCuatro{
+    margin: 0.2em;
+    padding: 0.2em;
+  }
+  span{
+    margin: 0 0.3em 0.3em 0.3em;
+  }
+}

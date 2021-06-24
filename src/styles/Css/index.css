@@ -1,0 +1,1124 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  padding: 12px 17.5px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.selectInput {
+  width: 100%;
+  min-width: 90px;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+}
+
+select:required:invalid {
+  color: #c4c4c4;
+}
+
+option {
+  color: black;
+}
+
+.TitleText {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.002em;
+  color: #606060;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 25px;
+}
+
+.StepsText {
+  left: 53.5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.002em;
+  color: #ffa41d;
+  text-align: center;
+  margin: 0 55.5px 22px 53.5px;
+}
+
+.labelText {
+  color: #606060;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding-left: 1px;
+  margin-top: 24px;
+  letter-spacing: 0.03em;
+}
+
+.disabledText {
+  opacity: 0.6;
+}
+
+.button, .registro {
+  height: 45px;
+  border-radius: 4px;
+  padding: 14px 17.5px;
+  box-sizing: border-box;
+  text-align: center;
+  user-select: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.button {
+  background: #ffd292;
+}
+
+.isValid {
+  background: #ffa41d;
+  cursor: pointer;
+}
+
+.buttonExpertAdd {
+  cursor: pointer;
+  margin: 13px 0;
+  height: 45px;
+  border-radius: 4px;
+  padding: 14px 17.5px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ffa41d;
+  user-select: none;
+  color: #ffa41d;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.createTitleText, .generalInfo, .legal {
+  height: 40px;
+  display: flex;
+  text-align: center;
+}
+
+.createTitleText {
+  margin: 0px 60px 10px 60px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.generalInfo {
+  margin: 12px 55px 33px 56px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px 0 22px;
+}
+
+.inputContainer label {
+  height: 10px;
+  left: 23px;
+  top: 126px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding-left: 1px;
+  margin-top: 24px;
+  letter-spacing: 0.03em;
+  /* Gris */
+  color: #606060;
+}
+
+.buttonCreate {
+  margin: 0 20px;
+  margin-top: 45px;
+}
+
+.form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form button {
+  margin: 10px;
+}
+
+.fix-form {
+  padding-top: 70px;
+}
+
+.fix-form .createTitleText {
+  padding: 0;
+  margin-bottom: 1px;
+}
+
+.legal {
+  margin: 12px 55px 33px 56px;
+  display: flex;
+  justify-content: center;
+}
+
+.registro {
+  background: #ffa41d;
+  cursor: pointer;
+}
+
+.success {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkGif {
+  width: 86px;
+  height: 86px;
+}
+
+.successBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 233px;
+}
+
+.createError {
+  height: 100%;
+  width: 100%;
+  background: rgba(77, 78, 86, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 100px;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.errorBox {
+  width: 100%;
+  padding: 18px 0;
+  background: white;
+  box-shadow: 0px -4px -4px rgba(77, 78, 86, 0.3);
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.errorGif {
+  width: 106px;
+  height: 106px;
+  margin: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.inputCity input {
+  min-width: 100%;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.inputDocumentContainer {
+  width: 100%;
+}
+
+.document {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type='date']:required:invalid {
+  color: #c4c4c4;
+}
+
+.RoundedCheckbox {
+  display: inline-block;
+  color: #606060;
+  margin: 0 8px 7px 0;
+  padding: 7px 13px;
+  font-size: 12px;
+  border: 1px solid #606060;
+  border-radius: 200px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.RoundedCheckboxChecked {
+  color: white;
+  border: 1px solid #606060;
+  background: #606060;
+}
+
+.subtitleBox {
+  padding: 0 55px;
+}
+
+.subtitleText {
+  width: 100%;
+  color: #606060;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.002em;
+}
+
+.WindowTitle {
+  width: 100%;
+  color: #606060;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.TableColumnTitle {
+  width: 100%;
+  color: #4f4f4f;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.passwordGroup {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.passwordGroup input {
+  display: block;
+  text-transform: none;
+  width: 100%;
+}
+
+.passwordGroup i {
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  height: 16px;
+  right: 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+.passwordGroup .eyeView {
+  width: 21px;
+  height: 21px;
+}
+
+.passwordGroup span {
+  box-sizing: border-box;
+  max-width: 209px;
+  height: 37px;
+  background-color: #606060;
+  color: #fff;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 2px;
+  padding: 5px 10px;
+  line-height: 13px;
+  position: absolute;
+  margin-top: 5px;
+  right: 0;
+}
+
+.passwordGroup span::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 74%;
+  margin-left: 40px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #606060 transparent;
+}
+
+.labelCheck label {
+  font-size: 12px;
+  margin-left: 5px;
+  font-family: Poppins;
+  color: #606060;
+}
+
+.labelCheck {
+  margin-bottom: 20px;
+  display: flex;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.terms {
+  color: #0d919d;
+}
+
+.serviceContainer {
+  width: 316px;
+  height: 50px;
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 0.1px solid #a3a4b0;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px 0 rgba(163, 164, 176, 0.5);
+  margin: 10px auto;
+}
+
+.serviceContainer2 {
+  width: 316px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid red;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px 0 rgba(163, 164, 176, 0.5);
+  margin: 10px auto;
+}
+
+.serviceNameAndState {
+  height: 10px;
+  line-height: 15px;
+  margin: 8px 0 0 13px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.003em;
+}
+
+.serviceNameAndState span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.003em;
+}
+
+.serviceButton {
+  width: 70px;
+  height: 22px;
+  font-size: 10px;
+}
+
+.littleCheckbox:checked {
+  background: red;
+}
+
+.subtitle {
+  color: #606060;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 251px;
+  text-align: center;
+  height: 44px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.002em;
+}
+
+.serviceOptions {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.listItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listItems input {
+  margin: 0;
+  width: 100px;
+  border: none;
+}
+
+.top {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top .whiteButton {
+  margin: 10px 0px;
+}
+
+.innerTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxContainer {
+  width: 45px;
+  height: 26px;
+  border-radius: 25px;
+  display: inline-block;
+  background: #0d919d;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkboxContainerlight {
+  background: #606060;
+}
+
+.checkboxDot {
+  margin: 4px 4px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+
+.checkboxDotRight {
+  transform: translateX(19px);
+}
+
+.forgotPassText {
+  color: #606060;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  margin: 10px 0px 0px 25px;
+}
+
+.customCheckbox {
+  width: 13px;
+  height: 13px;
+  padding: 1px;
+  border-radius: 2px;
+  font-size: 14px;
+  border: 1px solid #4f4f4f;
+  background: white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customCheckboxChecked {
+  width: 15px;
+  height: 15px;
+  background: #0d919d;
+  border: none;
+}
+
+.noBackgroundButton {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hoursPage {
+  width: 100%;
+}
+
+.hoursPage .TitleText {
+  padding: 0 44px 21px 44px;
+  line-height: 25px;
+}
+
+.hoursPage .subtitleText {
+  width: auto;
+  padding: 0 54px;
+}
+
+.hoursTable {
+  margin: 0;
+  box-sizing: content-box;
+  padding: 0 22px;
+  font-weight: 300;
+}
+
+.HeadersSchedules {
+  display: flex;
+  padding: 20px 0 13px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.dayHeader {
+  width: 120px;
+}
+
+.openHeader {
+  width: 35%;
+}
+
+.SectionTitle {
+  border-bottom: 0.3px solid #4f4f4f;
+  padding-bottom: 20px;
+}
+
+.dailyHours {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.dailyHours input {
+  margin: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.dailyHours .customCheckbox {
+  min-width: 13px;
+}
+
+.dailyHours .customCheckboxChecked {
+  min-width: 15px;
+  align-items: center;
+  user-select: none;
+}
+
+.dailyHours input[type='time'] {
+  height: 25px;
+  background: none;
+  padding: 0 5px;
+  text-align: center;
+  margin-left: 24px;
+  flex-grow: 1;
+  min-width: 81px;
+}
+
+.dailyHours input[type='time']::-webkit-calendar-picker-indicator {
+  background: none;
+  display: none;
+}
+
+.dailyHours input[type='time']:disabled {
+  background: #f8f8f8;
+  color: #f2f2f2;
+}
+
+.dailyHours input[type='time']::-webkit-calendar {
+  background: none;
+  display: none;
+}
+
+.dailyHours .dayLabel {
+  min-width: 71px;
+  margin-left: 12px;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.whiteButton {
+  min-width: 58px;
+  max-height: 22px;
+  padding: 7px 7px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 6px;
+  color: #4f4f4f;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.SectionTitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+
+.ToggleContainer {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ToggleContainer .ToggleText {
+  font-size: 14px;
+  font-weight: normal;
+  color: #4f4f4f;
+}
+
+.sectionsContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sectionsContainer .labelText {
+  margin-bottom: 10px;
+}
+
+.sectionsContainer .List {
+  margin-top: 10px;
+}
+
+.sectionsContainer input {
+  width: 100%;
+}
+
+.sectionsContainer .SectionTitle {
+  margin: 24px 0 12px 0;
+}
+
+.logo {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+.logoDiv {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.08);
+}
+
+.whiteSpace {
+  min-height: 38vh;
+}
+
+.serviceHeaders .StepsText {
+  margin: 0 0 5px 0;
+}
+
+.serviceHeaders .TitleText {
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+.subTitleSalon {
+  width: 85%;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.subTitleInd {
+  width: 70%;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.expertTitle {
+  margin: 1px 40px 0px 50px;
+}
+
+.expertContainer {
+  height: 100%;
+  width: 100%;
+  background: rgba(77, 78, 86, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.expertContainer input {
+  width: 100%;
+}
+
+.expertForm {
+  margin: 0px;
+  padding: 0px;
+}
+
+.expertScreenContainer {
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.expertScreenContainer .buttonExpert {
+  width: 100%;
+}
+
+.expertScreenContainer .subtitleText {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.expertConfig {
+  width: 100%;
+  margin: 0px;
+  padding: 0px 20px;
+  height: 65%;
+  background: white;
+  box-shadow: 0px -4px -4px rgba(77, 78, 86, 0.3);
+  border-radius: 20px 20px 0px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.expertConfig .hoursTable {
+  margin: 0;
+  box-sizing: content-box;
+  width: 100%;
+  padding: 0;
+  font-weight: 300;
+}
+
+.expertDisplay {
+  display: none;
+}
+
+.buttonsContainer {
+  width: 100%;
+  margin-top: 200px;
+}
+
+.expertText {
+  color: #606060;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 10px;
+  margin-top: 24px;
+  letter-spacing: 0.03em;
+}
+
+.expertHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.closeCard {
+  margin-top: 20px;
+}
+
+.buttonExpert {
+  margin-top: 45px;
+}
+
+.renderExpert {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #60606044;
+  border-radius: 10px;
+  padding: 16px 13px;
+}
+
+.contianerHours {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  color: #606060;
+  font-family: 'Poppins';
+}
+
+.nameExpert {
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  font-family: 'Poppins';
+}
+
+.bodyExpert {
+  font-weight: 400;
+  font-size: 14px;
+  color: #606060;
+  font-family: 'Poppins';
+}
+
+.labelExpert {
+  margin: 0 20px;
+  font-family: 'Poppins';
+  border-bottom: 0.3px solid #4f4f4f71;
+}
+
+.btnAndX {
+  display: flex;
+}
+
+.btnAndX .whiteButton {
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+.btnAndX .noBackgroundButton {
+  margin: 5px 0px;
+}
+
+.expertConfig .noBackgroundButton {
+  padding-top: 15px;
+}
+
+.expertConfig .hoursTable {
+  padding: 0;
+}
+
+.expertConfig .hoursTable .HeadersSchedules {
+  color: #4f4f4f;
+}
+
+.renderExpertContainer {
+  padding: 0 20px;
+}
+
+.map {
+  width: 100%;
+  height: 110vh;
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.buttonConfirm {
+  z-index: 3;
+  top: calc(100vh - 70px);
+  position: absolute;
+}
+
+.void {
+  min-height: 250px;
+}
+
+.back-navbar {
+  width: 100%;
+}
+
+.back-navbar .arrowBox {
+  margin: 23px;
+}
+
+.back-navbar button {
+  margin: 0;
+}
+
+.validationAlert {
+  font-size: 11px;
+  color: red;
+}
+
+.flex-div {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.changePassTitle {
+  margin: 40px 40px 30px 50px;
+}
+
+.assignPrices {
+  height: 100%;
+  width: 100%;
+  background: rgba(77, 78, 86, 0.8);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.assignPrices .errorBox {
+  position: absolute;
+  width: 100%;
+  min-height: 70%;
+  background: white;
+  box-shadow: 0px -4px -4px rgba(77, 78, 86, 0.3);
+  border-radius: 20px 20px 0px 0px;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.assignPrices .errorBox .inputNumber {
+  width: 20%;
+}
+
+.assignPrices .errorBox .wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.assignPrices .errorBox .priceSubservices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.assignPrices .TitleText {
+  display: flex;
+  font-size: 18px;
+  width: 70%;
+  margin: 0;
+}
+
+.assignPrices .noBackgroundButton {
+  width: 10%;
+  margin: 0;
+}
+
+.btnWrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 auto;
+  margin-bottom: 18px;
+  bottom: 0;
+}
+
+.tabTitle {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.columnTitles {
+  display: flex;
+  justify-content: space-between;
+  width: 89%;
+  line-height: 15px;
+  margin: 0 auto;
+}
+
+.containerSubService {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.priceHeaders .StepsText {
+  margin-bottom: 5px;
+}
+
+.priceHeaders .TitleText {
+  width: 60%;
+  margin: 0px auto 25px;
+}
+
+.priceHeaders .subtitleText {
+  width: 70%;
+  margin: 0 auto 36px;
+}
+
+.priceBoxes {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #60606044;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 16px 13px 0 13px;
+}
+
+.priceSubservices {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.innerPriceBox {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
