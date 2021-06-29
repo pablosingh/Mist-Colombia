@@ -1,4 +1,4 @@
-<p align='left'>
+<p>
     <img src='./crear_cuenta_mist.jpg'></img>
     <img src='./crear_contrasenia_mist.png'></img>
     <img src='./ingresar_mist.png'></img>
