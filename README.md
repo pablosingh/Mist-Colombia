@@ -1,5 +1,7 @@
 <p align="left">
-    <img height="150" src='./public/ingresar_mist.png'></img>
+    <img height="250" src='./public/crear_cuenta_mist.jpg'></img>
+    <img height="250" src='./public/crear_contrasenia_mist.png'></img>
+    <img height="250" src='./public/ingresar_mist.png'></img>
 </p>
 # Getting Started with Create React App
 
