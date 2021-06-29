@@ -1,5 +1,5 @@
 <p align="left">
-    <img height="150" src='./ingresar_mist.png'></img>
+    <img height="150" src='./public/ingresar_mist.png'></img>
 </p>
 # Getting Started with Create React App
 
