@@ -3,11 +3,25 @@
     <img height="250" src='./public/crear_contrasenia_mist.png'></img>
     <img height="250" src='./public/ingresar_mist.png'></img>
 </p>
+
+### About
+
+- [ ] Group Project / Internship at Mist promoted by Soy Henry
+- It is a project created from scratch, brings beauty services closer to salons and independents and their potential clients.
+- You can create a salon-type account, with all your registered collaborators, and an independent one.
+- You can schedule appointments, filter (and paginate), search for professionals, etc.
+- Filter by sections, categories, subcategories, attention shift, canceled appointments.
+- In home you will see balance of money earned, completed appointments, score provided by clients, comments.
+- The technologies implemented are: TypeScript, React, RxJs, Sass, FireBase, Trello, Figma
+- For more info contact me!
+
+<hr><hr/>
+
 # Getting Started with Create React App
 
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 - In the project directory, you can run:
 
