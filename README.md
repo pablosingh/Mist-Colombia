@@ -4,7 +4,7 @@
     <img height="250" src='./public/ingresar_mist.png'></img>
 </p>
 
-### About
+### `About`
 
 - [ ] Group Project / Internship at Mist promoted by Soy Henry
 - It is a project created from scratch, brings beauty services closer to salons and independents and their potential clients.
@@ -15,7 +15,7 @@
 - The technologies implemented are: TypeScript, React, RxJs, Sass, FireBase, Trello, Figma
 - For more info contact me!
 
-<hr><hr/>
+<hr>
 
 # Getting Started with Create React App
 
